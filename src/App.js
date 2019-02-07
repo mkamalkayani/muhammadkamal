@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import DefaultLayout from './Containers/DefaultLayout';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import logo from './logo.svg';
+import { BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
 import 'typeface-roboto';
 import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';

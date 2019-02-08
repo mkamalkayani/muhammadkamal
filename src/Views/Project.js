@@ -9,18 +9,22 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
-const styles = {
+const styles = theme => ({
   card: {
     maxWidth: 300,
     minWidth: 280,
     margin: '0 auto',
     marginBottom: '20px',
+    [theme.breakpoints.up('sm')]: {
+      margin: '10px',
+    },
   },
+
   media: {
     // ⚠️ object-fit is not supported by IE 11.
     objectFit: 'cover',
   },
-};
+});
 
 function Project(props) {
   const { classes, project } = props;
@@ -37,19 +41,16 @@ function Project(props) {
           title="title"
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
+          <Typography gutterBottom variant="h6" component="h2">
             {title}
           </Typography>
           <Typography component="p">{description}</Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
+        {/* <Button variant="contained" size="small" color="primary">
           Goto Project
-        </Button>
+        </Button> */}
       </CardActions>
     </Card>
   );

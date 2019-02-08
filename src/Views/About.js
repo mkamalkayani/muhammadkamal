@@ -33,7 +33,7 @@ const About = ({ classes }) => {
       <Grid item>
         <Typography className={classes.intro} align="center" variant="subtitle1">
           Welcome to my portfolio page. I am a self taught web developer. I like to create dynamic,
-          user-friendly, and responsive websites and web apps.
+          user-friendly, and responsive web apps.
         </Typography>
       </Grid>
     </div>

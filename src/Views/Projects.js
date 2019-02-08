@@ -15,7 +15,7 @@ const projects = [
     description: 'Innovation tool for Hackweek events',
     img: innovation_tool,
     alt: 'alt text',
-    projectLink: 'https://mkamalkayani.github.io/wikipediaViewer/',
+    projectLink: '/',
   },
   {
     id: 3,
@@ -39,7 +39,7 @@ const projects = [
     description: 'some description',
     img: local_weather,
     alt: 'alt text',
-    projectLink: 'https://mkamalkayani.github.io/localweather/',
+    projectLink: 'https://muhammadkamal.me/localWeather/',
   },
 ];
 
@@ -51,6 +51,7 @@ const styles = theme => ({
       paddingTop: '40px',
       display: 'flex',
       flexWrap: 'wrap',
+      justifyContent: 'center',
     },
   },
 });

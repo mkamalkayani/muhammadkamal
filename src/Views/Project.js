@@ -13,10 +13,10 @@ const styles = theme => ({
   card: {
     maxWidth: 300,
     minWidth: 280,
-    margin: '0 auto',
-    marginBottom: '20px',
+    margin: 'auto',
+    marginBottom: '25px',
     [theme.breakpoints.up('sm')]: {
-      margin: '10px',
+      margin: '20px 20px',
     },
   },
 
@@ -41,16 +41,24 @@ function Project(props) {
           title="title"
         />
         <CardContent>
-          <Typography gutterBottom variant="h6" component="h2">
+          <Typography gutterBottom variant="h6" component="h2" align="center">
             {title}
           </Typography>
-          <Typography component="p">{description}</Typography>
+          <Typography align="center">{description}</Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>
-        {/* <Button variant="contained" size="small" color="primary">
-          Goto Project
-        </Button> */}
+        <Button
+          style={{ margin: 'auto' }}
+          variant="contained"
+          size="small"
+          color="light"
+          href={projectLink}
+          target="_blank"
+          rel="noopener"
+        >
+          SHow Project
+        </Button>
       </CardActions>
     </Card>
   );

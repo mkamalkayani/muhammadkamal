@@ -1,9 +1,9 @@
 import React, { Fragment } from 'react';
 import { Typography, withStyles, Grid } from '@material-ui/core';
-import img from '../assests/img/Kamal_pic.jpg';
+import img from '../assests/img/kamal_pic.jpg';
 
 const styles = theme => ({
-  about: {},
+  about: { marginBottom: '20px' },
   intro: {
     maxWidth: '500px',
     margin: 'auto',
@@ -19,8 +19,8 @@ const styles = theme => ({
 
 const About = ({ classes }) => {
   return (
-    <div>
-      <Grid className={classes.about} container justify="center" alignItems="center">
+    <div className={classes.about}>
+      <Grid container justify="center" alignItems="center">
         <Grid item>
           <img src={img} alt="selfie" className={classes.img} />
         </Grid>

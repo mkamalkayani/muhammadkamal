@@ -8,7 +8,10 @@ const DefaultLayout = () => {
   return (
     <div className="main">
       <Header />
-      <div>
+      <About />
+      <Projects />
+      <Contact />
+      {/* <div>
         <Switch>
           <Route exact path="/about" component={About} />
           <Route exact path="/projects" component={Projects} />
@@ -16,7 +19,7 @@ const DefaultLayout = () => {
         </Switch>
 
         <Footer />
-      </div>
+      </div> */}
     </div>
   );
 };

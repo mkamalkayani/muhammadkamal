@@ -46,9 +46,9 @@ const projects = [
 const styles = theme => ({
   container: {
     background: 'lightgrey',
-    padding: '20px',
+    padding: '80px 20px 20px 20px',
     [theme.breakpoints.up('sm')]: {
-      paddingTop: '40px',
+      paddingTop: '80px',
       display: 'flex',
       flexWrap: 'wrap',
       justifyContent: 'center',
@@ -58,7 +58,7 @@ const styles = theme => ({
 
 function Projects({ classes }) {
   return (
-    <div className={classes.container}>
+    <div className={classes.container} id="projects">
       {projects.map(project => (
         <Project project={project} />
       ))}

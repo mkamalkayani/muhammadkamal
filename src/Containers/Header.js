@@ -25,17 +25,11 @@ function Header(props) {
   const { classes } = props;
   return (
     <div className={classes.root}>
-      <AppBar position="static">
+      <AppBar position="fixed">
         <Toolbar>
-          <Button component={NavLink} to="/about">
-            About
-          </Button>
-          <Button component={NavLink} to="/projects">
-            Projects
-          </Button>
-          <Button component={NavLink} to="/contact">
-            Contact
-          </Button>
+          <Button href="#about">About</Button>
+          <Button href="#projects">Projects</Button>
+          <Button href="#contact">Contact</Button>
           <div className={classes.grow} />
           <Typography className={classes.title} variant="h6" color="inherit" noWrap>
             Portfilio

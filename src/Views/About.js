@@ -1,12 +1,11 @@
 import React from 'react';
-import { Typography, withStyles, Grid } from '@material-ui/core';
+import { Typography, withStyles, Grid, Paper } from '@material-ui/core';
 import img from '../assests/img/kamal_pic.jpg';
 
 const styles = theme => ({
   about: {
-    marginBottom: '30px',
     [theme.breakpoints.up('sm')]: {
-      height: 'calc(100vh - 56px)',
+      height: '100vh',
     },
   },
   intro: {
@@ -20,11 +19,15 @@ const styles = theme => ({
     maxWidth: '200px',
     borderRadius: '5px',
   },
+  skills: {
+    padding: '20px',
+    maxwidth: '20px',
+  },
 });
 
 const About = ({ classes }) => {
   return (
-    <div className={classes.about} id="about">
+    <Paper className={classes.about} id="about">
       <Grid container justify="center" alignItems="center">
         <Grid item>
           <img src={img} alt="selfie" className={classes.img} />
@@ -37,11 +40,16 @@ const About = ({ classes }) => {
       </Grid>
       <Grid item>
         <Typography className={classes.intro} align="center" variant="subtitle1">
-          I like to create responsive and user friendly web apps. Currently, I have experience with
-          Frontend Developement only. However, I have planned to become a full Stack developer.
+          I am a passionate Frontend Developer. I like to learn new technologies and use them in my
+          projects.
         </Typography>
       </Grid>
-    </div>
+      <Grid item>
+        <Typography align="center" gutterBottom className={classes.skills}>
+          <strong>Skils:</strong> React, JavaScript, HTML, CSS, Bootstrap, Reactstrap, Material-UI
+        </Typography>
+      </Grid>
+    </Paper>
   );
 };
 

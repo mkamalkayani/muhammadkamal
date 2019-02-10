@@ -1,5 +1,6 @@
 import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
+import { Paper } from '@material-ui/core';
 import Project from './Project';
 import {
   innovation_tool,
@@ -12,23 +13,25 @@ const projects = [
   {
     id: 4,
     title: 'XING Innovation Hub',
-    description: 'Innovation tool for Hackweek events',
+    description: 'A Single Page Application using React and Rails API',
     img: innovation_tool,
     alt: 'alt text',
     projectLink: '/',
+    tech: 'React, JavaScript, Reactstrap, HTML, CSS',
   },
   {
     id: 3,
     title: 'Wikipedia Viewer',
-    description: 'some description',
+    description: 'Search articles on Wikipedia or read a random article.',
     img: wikipedia_viewer,
     alt: 'alt text',
     projectLink: 'https://mkamalkayani.github.io/wikipediaViewer/',
+    tech: ' JavaScript, Bootstrap, HTML, CSS',
   },
   {
     id: 2,
     title: 'Ramdom Quotes',
-    description: 'some description',
+    description: 'Are you feeling down? Visit this page and get a dose of motivation.',
     img: motivational_quotes,
     alt: 'alt text',
     projectLink: 'https://mkamalkayani.github.io/randomQuoteMachine/',
@@ -36,17 +39,19 @@ const projects = [
   {
     id: 1,
     title: 'Local Weather',
-    description: 'some description',
+    description:
+      'This app uses the openweathermap api to show the weather conditions at the specified location.',
     img: local_weather,
     alt: 'alt text',
     projectLink: 'https://muhammadkamal.me/localWeather/',
+    tech: '',
   },
 ];
 
 const styles = theme => ({
   container: {
-    background: 'lightgrey',
-    padding: '80px 20px 20px 20px',
+    background: [theme.palette.primary.main],
+    padding: '30px 20px 20px 20px',
     [theme.breakpoints.up('sm')]: {
       paddingTop: '80px',
       display: 'flex',
@@ -58,11 +63,11 @@ const styles = theme => ({
 
 function Projects({ classes }) {
   return (
-    <div className={classes.container} id="projects">
+    <Paper className={classes.container} id="projects">
       {projects.map(project => (
         <Project project={project} />
       ))}
-    </div>
+    </Paper>
   );
 }
 

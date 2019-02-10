@@ -28,7 +28,7 @@ const styles = theme => ({
 
 function Project(props) {
   const { classes, project } = props;
-  const { title, description, img, alt, projectLink } = project;
+  const { title, description, img, alt, projectLink, tech } = project;
   return (
     <Card className={classes.card}>
       <CardActionArea>
@@ -50,9 +50,7 @@ function Project(props) {
       <CardActions>
         <Button
           style={{ margin: 'auto' }}
-          variant="contained"
           size="small"
-          color="light"
           href={projectLink}
           target="_blank"
           rel="noopener"

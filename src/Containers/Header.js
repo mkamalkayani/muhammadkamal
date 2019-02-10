@@ -25,9 +25,11 @@ function Header(props) {
   const { classes } = props;
   return (
     <div className={classes.root}>
-      <AppBar position="fixed">
+      <AppBar position="static">
         <Toolbar>
-          <Button href="#about">About</Button>
+          <Button href="#about" color="#fff">
+            About
+          </Button>
           <Button href="#projects">Projects</Button>
           <Button href="#contact">Contact</Button>
           <div className={classes.grow} />

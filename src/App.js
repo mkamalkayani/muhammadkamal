@@ -4,14 +4,11 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
 import 'typeface-roboto';
 import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';
-import { green, pink } from '@material-ui/core/colors';
+import { green, deepPurple } from '@material-ui/core/colors';
 
 const theme = createMuiTheme({
   palette: {
-    primary: {
-      main: green[400],
-    },
-    secondary: pink,
+    primary: { main: '#81c784' },
   },
 });
 

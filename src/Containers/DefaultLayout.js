@@ -1,15 +1,20 @@
 import React from 'react';
 import Header from './Header';
-import Footer from './Footer';
-import { About, Contact, Projects } from './../Views/index';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Home from '../Views/Home';
+import InnovationTool from '../Views/InnovationTool/InnovationTool';
 
 const DefaultLayout = () => {
   return (
     <div className="main">
       <Header />
-      <About />
-      <Projects />
-      <Contact />
+      <Router>
+        <Switch>
+          <Route exact path="/InnovationTool" component={InnovationTool} />
+          <Route path="/" component={Home} />
+        </Switch>
+      </Router>
+      ;
     </div>
   );
 };

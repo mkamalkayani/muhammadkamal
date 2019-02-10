@@ -27,11 +27,11 @@ function Header(props) {
     <div className={classes.root}>
       <AppBar position="static">
         <Toolbar>
-          <Button href="#about" color="#fff">
+          <Button href="/#about" color="#fff">
             About
           </Button>
-          <Button href="#projects">Projects</Button>
-          <Button href="#contact">Contact</Button>
+          <Button href="/#projects">Projects</Button>
+          <Button href="/#contact">Contact</Button>
           <div className={classes.grow} />
           <Typography className={classes.title} variant="h6" color="inherit" noWrap>
             Portfilio

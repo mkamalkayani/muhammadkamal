@@ -20,8 +20,10 @@ const styles = theme => ({
     display: 'block',
     marginLeft: 'auto',
     marginRight: 'auto',
-    width: '75%',
-    maxWidth: '800px',
+    width: '100%',
+    [theme.breakpoints.up('sm')]: {
+      width: '75%',
+    },
   },
 });
 

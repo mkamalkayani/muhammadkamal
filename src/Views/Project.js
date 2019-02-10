@@ -28,7 +28,7 @@ const styles = theme => ({
 
 function Project(props) {
   const { classes, project } = props;
-  const { title, description, img, alt, projectLink, tech } = project;
+  const { title, description, img, alt, projectLink, target } = project;
   return (
     <Card className={classes.card}>
       <CardActionArea>
@@ -52,7 +52,7 @@ function Project(props) {
           style={{ margin: 'auto' }}
           size="small"
           href={projectLink}
-          target="_blank"
+          target={target}
           rel="noopener"
         >
           SHow Project

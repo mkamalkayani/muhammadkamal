@@ -16,8 +16,8 @@ const projects = [
     description: 'A Single Page Application using React and Rails API',
     img: innovation_tool,
     alt: 'alt text',
-    projectLink: '/',
-    tech: 'React, JavaScript, Reactstrap, HTML, CSS',
+    projectLink: '/InnovationTool',
+    target: '_self',
   },
   {
     id: 3,
@@ -26,7 +26,7 @@ const projects = [
     img: wikipedia_viewer,
     alt: 'alt text',
     projectLink: 'https://mkamalkayani.github.io/wikipediaViewer/',
-    tech: ' JavaScript, Bootstrap, HTML, CSS',
+    target: '_blank',
   },
   {
     id: 2,
@@ -35,6 +35,7 @@ const projects = [
     img: motivational_quotes,
     alt: 'alt text',
     projectLink: 'https://mkamalkayani.github.io/randomQuoteMachine/',
+    target: '_blank',
   },
   {
     id: 1,
@@ -44,7 +45,7 @@ const projects = [
     img: local_weather,
     alt: 'alt text',
     projectLink: 'https://muhammadkamal.me/localWeather/',
-    tech: '',
+    target: '_blank',
   },
 ];
 

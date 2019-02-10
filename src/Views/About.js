@@ -45,7 +45,7 @@ const About = ({ classes }) => {
         </Typography>
       </Grid>
       <Grid item>
-        <Typography align="center" gutterBottom className={classes.skills}>
+        <Typography align="center" className={classes.skills}>
           <strong>Skils:</strong> React, JavaScript, HTML, CSS, Bootstrap, Reactstrap, Material-UI
         </Typography>
       </Grid>

@@ -44,7 +44,7 @@ const projects = [
       'This app uses the openweathermap api to show the weather conditions at the specified location.',
     img: local_weather,
     alt: 'alt text',
-    projectLink: 'https://muhammadkamal.me/localWeather/',
+    projectLink: 'https://mkamalkayani.github.io/localWeather/',
     target: '_blank',
   },
 ];

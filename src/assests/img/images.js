@@ -1,4 +1,4 @@
-import kamal_pic from './kamal_pic.jpg';
+import kamal_pic from './kamal_pic.png';
 import local_weather from './local_weather.jpg';
 import motivational_quotes from './motivational_quotes.png';
 import wikipedia_viewer from './wikipedia_viewer.jpg';

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Typography, withStyles, Grid, Paper } from '@material-ui/core';
-import img from '../assests/img/kamal_pic.jpg';
+import { kamal_pic } from '../assests/img/images';
 
 const styles = theme => ({
   about: {
@@ -30,7 +30,7 @@ const About = ({ classes }) => {
     <Paper className={classes.about} id="about">
       <Grid container justify="center" alignItems="center">
         <Grid item>
-          <img src={img} alt="selfie" className={classes.img} />
+          <img src={kamal_pic} alt="selfie" className={classes.img} />
         </Grid>
       </Grid>
       <Grid item>

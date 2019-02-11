@@ -35,6 +35,9 @@ const InnovationTool = ({ classes }) => {
           Innovation Tool
         </Typography>
         <Typography className={classes.description} color="indigo">
+          I have developed the Frontend of the Innovation Tool using React.
+        </Typography>
+        <Typography className={classes.description} color="indigo">
           This app is used intrenally at XING and is not possible to view it in production outside
           of XING VPN. Therefore, the pictures of the App are being shown with due premission of the
           Product Owner.

@@ -14,7 +14,6 @@ const DefaultLayout = () => {
           <Route path="/" component={Home} />
         </Switch>
       </Router>
-      ;
     </div>
   );
 };

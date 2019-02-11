@@ -16,7 +16,7 @@ const projects = [
     description: 'A Single Page Application using React and Rails API',
     img: innovation_tool,
     alt: 'alt text',
-    projectLink: '/InnovationTool',
+    projectLink: '/#/InnovationTool',
     target: '_self',
   },
   {

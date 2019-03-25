@@ -40,8 +40,7 @@ const About = ({ classes }) => {
       </Grid>
       <Grid item>
         <Typography className={classes.intro} align="center" variant="subtitle1">
-          I am a passionate Frontend Developer. I like to learn new technologies and use them in my
-          projects.
+          A passionate Web developer.
         </Typography>
       </Grid>
       <Grid item>

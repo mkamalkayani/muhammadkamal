@@ -55,7 +55,7 @@ function Project(props) {
           target={target}
           rel="noopener"
         >
-          SHow Project
+          View Project
         </Button>
       </CardActions>
     </Card>

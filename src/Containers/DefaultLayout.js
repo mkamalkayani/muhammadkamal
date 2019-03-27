@@ -8,9 +8,9 @@ const DefaultLayout = () => {
   return (
     <div className="main">
       <Header />
-      <Router basename="portfolio">
+      <Router>
         <Switch>
-          <Route exact path="/InnovationTool" component={InnovationTool} />
+          <Route exact path="/portfolio/InnovationTool" component={InnovationTool} />
           <Route path="/" component={Home} />
         </Switch>
       </Router>

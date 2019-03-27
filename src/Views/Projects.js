@@ -16,8 +16,8 @@ const projects = [
     description: 'A Single Page Application using React and Rails API',
     img: innovation_tool,
     alt: 'alt text',
-    projectLink: '/#/InnovationTool',
-    target: '_self',
+    projectLink: 'https://gist.github.com/mkamalkayani/8347c0497500aacea19dc0c3c9bd3af1',
+    target: '_blank',
   },
   {
     id: 3,

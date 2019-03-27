@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react';
 import { withStyles, Paper, Typography } from '@material-ui/core';
 import { ParticipantsList } from './index';
-import Header from '../../Containers/Header';
 
 const styles = theme => ({
   root: {
